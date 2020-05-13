@@ -116,7 +116,7 @@ def api_edit(tree_id) -> str:
     return resp
 
 
-@app.route('/api/trees/<int:city_id>', methods=['DELETE'])
+@app.route('/api/trees/<int:tree_id>', methods=['DELETE'])
 def api_delete(tree_id) -> str:
     resp = Response(status=210, mimetype='application/json')
     return resp
